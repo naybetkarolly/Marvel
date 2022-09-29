@@ -1,0 +1,20 @@
+{
+  "name": "comics",
+  "version": "1.0.0",
+  "description": "Este proyecto trata de un buscador de comics relacionado con la app de marvel, siempre usa la version de sass 1.1.1",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naybetkarolly/Marvel.git"
+  },
+  "author": "naybet cardenas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naybetkarolly/Marvel/issues"
+  },
+  "homepage": "https://github.com/naybetkarolly/Marvel#readme"
+}

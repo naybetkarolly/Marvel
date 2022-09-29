@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/assets/favicon.png" type="image/x.icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>comics</title>
+</head>
+<body>
+
+  <!----------------------------TITULO Y LOGO---------------------------->
+  <header>
+    <section class="column logo-container has-background-black">
+      <h1 class="logo has-text-white is-size-2 has-text-centered american-font">
+        ADA
+        <img src="./assets/Marvel_Logo.svg.png" alt="" class="marvel-logo mx-3">
+        COMICS
+      </h1>
+    </section>
+  </header>
+
+
+  <!----------------------------IMAGEN DE PORTADA---------------------------->
+  <section class="hero is-halfheight img">
+  </section>
+
+
+  <!----------------------------CONTENEDOR PRINCIPAL---------------------------->
+  <main class="container">
+    <!-- Botón ir arriba -->
+    <div class="go-top-container">
+      <div class="go-top-button">
+        <i class="fas fa-chevron-up"></i>
+      </div>
+    </div>
+    <!----------------------------BUSCADOR---------------------------->
+    <div class="column">
+      <h2 class="is-size-4 mt-5 american-font">Busqueda</h2>
+
+        <nav class="navbar my-5" role="navigation" aria-label="main navigation">
+          <div id="navbarBasicExample" class="navbar-menu is-align-items-center busqueda">
+            <input class="input" type="text" placeholder="Normal input" id="search-input">
+
+            <section class="filters-input">
+              <div class="navbar-start">
+                <article class="navbar-item">
+                  <label class="navbar-label">Tipo</label>
+                  <select class="navbar-select" id="select-tipo">
+                    <option value="comics">Comics</option>
+                    <option value="characters">Personajes</option>
+                  </select>
+                </article>
+
+                <article class="navbar-item mx-2">
+                  <label class="navbar-label">Orden</label>
+                  <select id="search-order" class="navbar-select">
+                    <option class="navbar-item" value='title'>A/Z</option>
+                    <option class="navbar-item"value='-title'>Z/A</option>
+                    <option class="navbar-item" value='-focDate'>Más nuevos</option>
+                    <option class="navbar-item" value='focDate'>Más viejos</option>
+                  </select>  
+                </article>
+              </div>
+
+              <article class="navbar-end">
+                <div class="navbar-item">
+                  <div class="buttons">                   
+                    <button id="search-btn" class="button is-light">BUSCAR</button>
+                  </div>
+                </div>
+              </article>
+
+            </section>
+          </div>
+        </nav>
+
+        <!----------------------------RESULTADOS ---------------------------->
+        <section id="results"></section>    
+
+        <!----------------------------CONTENEDOR DE COMICS---------------------------->
+        <section id="root" class="columns is-flex-wrap-wrap is-mobile">  
+        </section>
+        
+        <!----------------------------CONTENEDOR DE RESULTADOS DE COMICS---------------------------->        
+        <section id="container-comic-info" class="container mb-5">
+          <div id="comic-characters-results" class="p-6"></div>
+          <div id="comic-characters-info" class="columns is-flex is-flex-wrap-wrap px-6 pt-0"></div>
+        </section>
+
+        <!----------------------------CONTENEDOR DE RESULTADOS DE PERSONAJES---------------------------->
+        <section id="container-character-info" class="columns is-flex
+        is-flex-wrap-wrap px-6 pt-0">
+          <div id="character-comics-results" class="column my-2	">
+          </div>
+          <div id="character-info" class="columns is-flex-wrap-wrap">
+          </div>
+        </section>
+        
+        <!----------------------------CONTENEDOR DE PERSONAJES ---------------------------->
+        <section id="root-personajes" class="columns is-flex-wrap-wrap is-hidden">
+        </section>
+    </div>
+  </main>
+
+  <!----------------------------PAGINADOR---------------------------->
+  <section class="container my-6 has-text-centered">
+    <div id="container-pagination"></div>
+  </section>
+  
+  <!---------------------------- FOOTER---------------------------->
+  <footer class="hero">
+  <div class="has-background-black has-text-white is-size-5 has-text-centered py-6 ">
+    <div>Hecho con ❤️</div>
+  </div>
+  </footer>
+
+</body>
+</html>
