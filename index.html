@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="/assets/favicon.png" type="image/x.icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"   integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
   <title>comics</title>
 </head>
@@ -39,11 +40,9 @@
     <!----------------------------BUSCADOR---------------------------->
     <div class="column">
       <h2 class="is-size-4 mt-5 american-font">Busqueda</h2>
-
         <nav class="navbar my-5" role="navigation" aria-label="main navigation">
           <div id="navbarBasicExample" class="navbar-menu is-align-items-center busqueda">
             <input class="input" type="text" placeholder="Normal input" id="search-input">
-
             <section class="filters-input">
               <div class="navbar-start">
                 <article class="navbar-item">
@@ -53,7 +52,6 @@
                     <option value="characters">Personajes</option>
                   </select>
                 </article>
-
                 <article class="navbar-item mx-2">
                   <label class="navbar-label">Orden</label>
                   <select id="search-order" class="navbar-select">
@@ -64,7 +62,6 @@
                   </select>  
                 </article>
               </div>
-
               <article class="navbar-end">
                 <div class="navbar-item">
                   <div class="buttons">                   
@@ -72,25 +69,23 @@
                   </div>
                 </div>
               </article>
-
             </section>
           </div>
         </nav>
 
         <!----------------------------RESULTADOS ---------------------------->
-        <section id="results"></section>    
+        <section id="results"></section>
 
         <!----------------------------CONTENEDOR DE COMICS---------------------------->
-        <section id="root" class="columns is-flex-wrap-wrap is-mobile">  
-        </section>
-        
-        <!----------------------------CONTENEDOR DE RESULTADOS DE COMICS---------------------------->        
+        <section id="root" class="columns is-flex-wrap-wrap is-mobile"></section>
+
+        <!------------------CONTENEDOR DE RESULTADOS DE COMICS----------------->        
         <section id="container-comic-info" class="container mb-5">
           <div id="comic-characters-results" class="p-6"></div>
           <div id="comic-characters-info" class="columns is-flex is-flex-wrap-wrap px-6 pt-0"></div>
         </section>
 
-        <!----------------------------CONTENEDOR DE RESULTADOS DE PERSONAJES---------------------------->
+        <!--------------------CONTENEDOR DE RESULTADOS DE PERSONAJES----------------------->
         <section id="container-character-info" class="columns is-flex
         is-flex-wrap-wrap px-6 pt-0">
           <div id="character-comics-results" class="column my-2	">
@@ -100,8 +95,7 @@
         </section>
         
         <!----------------------------CONTENEDOR DE PERSONAJES ---------------------------->
-        <section id="root-personajes" class="columns is-flex-wrap-wrap is-hidden">
-        </section>
+        <section id="root-personajes" class="columns is-flex-wrap-wrap is-hidden"></section>
     </div>
   </main>
 
@@ -116,6 +110,8 @@
     <div>Hecho con ❤️</div>
   </div>
   </footer>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.18.0/js/md5.min.js" integrity="sha512-Hmp6qDy9imQmd15Ds1WQJ3uoyGCUz5myyr5ijainC1z+tP7wuXcze5ZZR3dF7+rkRALfNy7jcfgS5hH8wJ/2dQ==" crossorigin="anonymous"></script>
+  <script src="./js/operations.js"></script>
+  <script src="./js/print.js"></script>
 </body>
 </html>
